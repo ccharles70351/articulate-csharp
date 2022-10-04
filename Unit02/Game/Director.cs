@@ -48,7 +48,7 @@ namespace Unit02.Game
         {
             Console.Write("Roll dice? [y/n] ");
             string rollDice = Console.ReadLine();
-            _isPlaying = (rollDice == "y");
+            _isPlaying = (rollDice.ToLower() == "y");
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace Unit02.Game
             string values = "";
             foreach (Die die in _dice)
             {
-                values += $"{die.value} ";
+                values += $"{die.rollNumber} ";
             }
 
             Console.WriteLine($"You rolled: {values}");
