@@ -21,7 +21,7 @@ namespace Unit02.Game
         /// </summary>
         public Director()
         {
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Die die = new Die();
                 _dice.Add(die);
