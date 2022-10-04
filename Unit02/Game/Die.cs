@@ -34,7 +34,7 @@ namespace Unit02.Game
         /// </summary>
         public void Roll()
         {
-            Random random = new Random();
+
             rollNumber = new Random().Next(1, 7);
 
             if (rollNumber == 5)
